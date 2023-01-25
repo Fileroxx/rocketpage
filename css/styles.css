@@ -8,16 +8,24 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #fafafa;
+    background: url('../assets/rocket.png'), rgba(0,0,0,.8);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    scroll-behavior: smooth;
 }
 
 main {
-    background: linear-gradient(180deg, #4819ae 0%, #6b01dd 100%);
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+    z-index: 1;
     padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
     color: #fff;
+}
+
+
+main .logo img {
+    width: 25%;
 }
 
 main .animacao {
@@ -29,13 +37,27 @@ main .botao {
 }
 
 main button {
-    background: #65cd6f;
-    color: #fff;
+    background: #1cd9fb;
+    color: #000;
+    font-weight: 600;
     border: none;
     padding: .8rem;
-    border-radius: 50px;
+    border-radius: 10px;
     width: 50%;
     outline: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+main button:hover {
+    opacity: .5;
 }
 
 main span {
@@ -49,6 +71,14 @@ main span {
 @media screen and (max-width: 991px) {
     main {
         clip-path: none;
+    }
+
+    main .logo {
+        text-align: left;
+    }
+
+    main .logo img {
+        width: 40%;
     }
 
     main .animacao {
@@ -66,6 +96,7 @@ main span {
 }
 
 #vantagens {
+
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
@@ -74,14 +105,23 @@ main span {
     font-size: 2rem;
     text-align: center;
     padding-bottom: 2rem;
+    color: #fff;
 }
 
 #vantagens .box-card {
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-    background: #fff;
+    background: rgba(255,255,255,.05);
+   
     padding: 2rem;
+    color: #fff;
     height: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
+
 
 @media screen and (max-width: 991px) {
     #vantagens .box-card {
@@ -90,10 +130,11 @@ main span {
 }
 
 #metodo {
-    background: linear-gradient(180deg, #fe9736 0%, #f32f64 150%);
-   color: #fff;
-   padding-top: 5rem;
-   padding-bottom: 5rem;
+
+    background-size: cover;
+    color: #fff;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 #metodo h1 {
@@ -170,7 +211,6 @@ main span {
 }
 
 #servicos {
-    background: linear-gradient(180deg, #4819ae 0%, #6b01dd 100%);
     color: #fff;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -183,10 +223,15 @@ main span {
 
 #servicos .box-card {
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-    background: #fff;
+    background: rgba(255,255,255,.05);
     padding: 2rem;
     height: 100%;
-    color: #000;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .btn-whatsapp a {
@@ -235,14 +280,14 @@ main span {
 
 @media screen and (max-width: 991px) {
     .btn-whatsapp {
-        right: 0;
+        right: 0% !important;
     }
 }
-
+ 
 #bonus {
-    background: rgb(239, 239, 239);
     padding-top: 5rem;
     padding-bottom: 5rem;
+    color: #fff;
 }
 
 #bonus h1 {
@@ -270,14 +315,18 @@ main span {
 }
 
 #bonus .botao button {
-    background: #25d366;
-    color: #FFF;
+    background: #1cd9fb;
+    color: #000;
     border: 0;
     padding: .8rem;
     width: 30%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 600;
-    border-radius: 50px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .swiper {
@@ -294,7 +343,9 @@ main span {
 }
 
 #trabalhos {
+
     padding-top: 3rem;
+    color: #fff;
     padding-bottom: 3rem;
 }
 
@@ -313,12 +364,16 @@ main span {
 #trabalhos .botao button {
     width: 30%;
     padding: .8rem;
-    background-color: #25d366;
-    color: #fff;
+    background-color: #1cd9fb;
+    color: #000;
     font-weight: 600;
-    font-size: 1.2rem;
-    border-radius: 50px;
+    font-size: 1rem;
+    border-radius: 10px;
     border: 0;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .skeleton {
@@ -343,8 +398,8 @@ main span {
 }
 
 #depoimentos {
-    background: linear-gradient(180deg, #fe9736 0%, #f32f64 150%);
-    color: #fff;
+
+     color: #fff;
     padding-top: 5rem;
     padding-bottom: 5rem;
 
@@ -359,12 +414,9 @@ main span {
 }
 
 #cobra {
-    background: linear-gradient(180deg, #4819ae 0%, #6b01dd 100%);
     color: #fff;
     padding-top: 5rem;
     padding-bottom: 8rem;   
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 20%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 
 #cobra .titulo-section {
@@ -375,15 +427,21 @@ main span {
 }
 
 #cobra .box-card {
-    background: #fff;
+    background: rgba(0,0,0,.2);
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-    color: #000;
+    border: 1px solid #1cd9fb;
+    border-radius: 10px;
+    color: #fff;
     padding: 2rem;
     text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 #cobra .box-card .titulo {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #1cd9fb;
     padding-bottom: 1rem;
     width: 100% !important;
 }
@@ -425,13 +483,18 @@ main span {
 }
 
 #cobra .botao button {
-    background: #25d366;
-    color: #fff;
+    background: #1cd9fb;
+    color: #000;
     border: 0;
     padding: .8rem;
     width: 30%;
-    border-radius: 50px;
-    font-size: 1.2rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 #cobra .pagamentos {
@@ -485,6 +548,7 @@ main span {
 #apresentacao {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    color: #fff;
 
 
 }
@@ -513,6 +577,7 @@ main span {
 #apresentacao span {
     background: #ff3;
     font-weight: 600;
+    color: #000;
 }
 
 @media screen and (max-width: 991px) {
@@ -528,7 +593,7 @@ main span {
 }
 
 #faq {
-    background: linear-gradient(180deg, #fe9736 0%, #f32f64 150%);
+
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
@@ -565,7 +630,7 @@ main span {
 }
 
 #copyright {
-    background-color: rgb(12, 17, 36);
+  
     padding-top: 1rem;
     padding-bottom: 1rem;
     color: #fff;
